@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <br><br>
+    <img class="mb-4" src="static/images/coderschool-logo.png" alt="">
+    <br><br>
+    <h2>VND classifier</h2>
+    <div class="row">
+        <div class="col-lg-8">
+            <div id="my-camera"></div>
+            <br>
+            <form id="form-capture-image">
+                <a href="#" class="btn btn-lg btn-primary btn-capture-image">Predict Now</a>
+            </form>
+        </div>
+        <div class="col-lg-4">
+            <div id="results">
+                <h3 id='class-result'>Predictions:</h3>
+                <img id="taken-photo" src="static/images/1567072883.195046.jpg" alt="" />
+                <div id="results-prediction">
+                    <p id="prediction"></p>
+                    <div class="mytable table table-striped">
+                        <div class="row my-title">
+                            <div class="col-6">
+                                Bills
+                            </div>
+                            <div class="col-6">
+                                Probability (Percentage)
+                            </div>
+                        </div>
+                        <div id="probs">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

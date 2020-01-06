@@ -1,0 +1,12 @@
+.my-table {
+    display:flex;
+    flex-direction: column;
+}
+
+.my-camera {
+    padding: 150px;
+}
+.my-probs {
+    display: flex;
+    flex-direction: column;
+}
